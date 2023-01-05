@@ -1,3 +1,3 @@
 ```
-sudo dnf install which git iproute
+sudo dnf install which git iproute iputils
 ```
