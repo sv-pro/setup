@@ -1,6 +1,6 @@
 Install missing software
 ```
-sudo dnf install git iproute iputils bind-utils wget nano vim
+sudo dnf install git iproute iputils bind-utils wget nano vim e2fsprogs
 ```
 
 Install JDK
