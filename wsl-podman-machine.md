@@ -2,6 +2,12 @@ Install missing software
 ```
 sudo dnf install git iproute iputils bind-utils wget nano vim
 ```
+
+Install JDK
+```
+sudo dnf install java-17-openjdk-headless
+```
+
 Make configuration files inmodifiable
 
 ```
