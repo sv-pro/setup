@@ -9,6 +9,20 @@ wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.5
 sudo tar -zxf OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz -C /opt
 # setup PATH env var
 ```
+or
+```
+cat <<EOF > /etc/yum.repos.d/adoptium.repo
+[Adoptium]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/centos/8/$(uname -m)
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+EOF
+
+yum update # update if you haven't already
+yum install temurin-17-jdk
+```
 
 Make configuration files inmodifiable
 
